@@ -103,7 +103,78 @@ const AboutPage = () => {
 							/>
 						</svg>
 					</div>
-					<div></div>
+
+					{/* EXPERIENCE CONTAINER */}
+					<div className="flex flex-col gap-12 justify-center pb-48">
+						{/* EXPERIENCE TITLE */}
+						<h1 className="font-bold text-2xl uppercase">experience</h1>
+						{/* EXPERIENCE LIST */}
+						<div>
+							{/* EXPERIENCE LIST ITEM */}
+							<div className="">
+								{/* LEFT */}
+								<div></div>
+								{/* CENTER */}
+								<div className="">
+									{/* LINE */}
+									<div className="">
+										{/* LINE CIRCLE */}
+										<div className=""></div>
+									</div>
+								</div>
+								{/* RIGHT */}
+								<div>
+									{/* JOB TITLE */}
+									<div>Senior JavaScript Engineer</div>
+									{/* JOB DESC */}
+									<div>
+										My current employment. Way better than the position before!
+									</div>
+									{/* JOB DATE */}
+
+									<div>2024 - Present</div>
+									{/* JOB COMPANY */}
+									<div>Apple</div>
+								</div>
+							</div>
+							<div>
+								{/* EXPERIENCE LIST ITEM */}
+								<div className="flex justify-between h-48">
+									{/* LEFT */}
+									<div className="w-1/3">
+										{/* JOB TITLE */}
+										<div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+											Senior JavaScript Engineer
+										</div>
+										{/* JOB DESC */}
+										<div className="p-3 text-sm italic">
+											My current employment. Way better than the position
+											before!
+										</div>
+										{/* JOB DATE */}
+
+										<div className="p-3 text-red-400 text-sm font-semibold">
+											2024 - Present
+										</div>
+										{/* JOB COMPANY */}
+										<div className="p-1 rounded bg-white text-sm font-semibold">
+											Apple
+										</div>
+									</div>
+									{/* CENTER */}
+									<div className="w-1/6 bg-red-600">
+										{/* LINE */}
+										<div className="">
+											{/* LINE CIRCLE */}
+											<div className=""></div>
+										</div>
+									</div>
+									{/* RIGHT */}
+									<div className="w-1/3 bg-red-200"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div className="hidden"></div>
 			</div>
