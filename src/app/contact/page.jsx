@@ -26,7 +26,6 @@ const ContactPage = () => {
 			)
 			.then(
 				(result) => {
-					// console.log("SUCCESS!");
 					setSuccess(true);
 					form.current.reset();
 				},
@@ -46,7 +45,7 @@ const ContactPage = () => {
 		>
 			<div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
 				{/* TEXT CONTAINER */}
-				<div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+				<div className="text-2xl text-center mt-7 mb-10 md:mt-8 md:mb-16 lg:mb-0 lg:mt-0 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
 					<div>
 						{text.split("").map((letter, index) => (
 							<motion.span
@@ -69,22 +68,22 @@ const ContactPage = () => {
 				<form
 					onSubmit={sendEmail}
 					ref={form}
-					className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+					className=" lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-8 p-24"
 				>
 					<span>Dear Khanh Nguyen,</span>
 					<textarea
-						rows={6}
 						className="bg-transparent border-b-2 border-b-black outline-none resize-none"
 						name="user_email"
 					/>
-					<span>My mail address is:</span>
+					<label for="email">My mail address is:</label>
 					<input
+						id="email"
 						name="user_email"
 						type="text"
 						className="bg-transparent border-b-2 border-b-black outline-none"
 					/>
 					<span>Regards</span>
-					<button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+					<button className="p-2 bg-purple-200 rounded font-semibold text-gray-600 md:p-4">
 						Send
 					</button>
 					{success && (
